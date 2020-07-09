@@ -1,9 +1,10 @@
 import 'package:cartrack/app.dart';
 import 'package:cartrack/models/car.dart';
-import 'package:cartrack/routes/home/commands/commands.dart';
-import 'package:cartrack/routes/home/widgets/appbar.dart';
-import 'package:cartrack/routes/home/widgets/car_selector.dart';
-import 'package:cartrack/routes/home/widgets/markers.dart';
+import 'package:cartrack/routes/login/home/commands/commands.dart';
+import 'package:cartrack/routes/login/home/widgets/appbar.dart';
+import 'package:cartrack/routes/login/home/widgets/car_selector.dart';
+import 'package:cartrack/routes/login/home/widgets/markers.dart';
+import 'package:cartrack/routes/login/login.dart';
 import 'package:cartrack/routes/settings/settings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
@@ -131,7 +132,7 @@ class _HomePageState extends State<HomePage> with RouteAware {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: <Widget>[
-                            CustomAppBar(title: 'Search in douala'),
+                            CustomAppBar(title: 'Search '),
                           ],
                         ),
                       )
@@ -255,6 +256,7 @@ class _HomePageState extends State<HomePage> with RouteAware {
     }
     print('\nWill not pop up\n');
     print(CarSelector.mode.value);
-    return false;
+    return Navigator.push(context,MaterialPageRoute(
+     builder: (context)=> LoginPage() ));
   }
 }

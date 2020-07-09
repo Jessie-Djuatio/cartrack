@@ -6,7 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:cartrack/app.dart';
-import 'package:cartrack/routes/home/home.dart';
+import 'package:cartrack/routes/login/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

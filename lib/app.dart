@@ -1,4 +1,5 @@
-import 'package:cartrack/routes/home/home.dart';
+//import 'package:cartrack/routes/login/home/home.dart';
+import 'package:cartrack/routes/login/login.dart';
 import 'package:flutter/material.dart';
 
 final RouteObserver<PageRoute> routeObserver = RouteObserver<PageRoute>();
@@ -13,7 +14,7 @@ class CarTrackApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: HomePage(),
+      home: LoginPage(),
       onGenerateRoute: _getRoute,
       navigatorObservers: [routeObserver],
     );
@@ -38,13 +39,13 @@ class CarTrackAppSession extends InheritedWidget {
     if (settings.name == '/home') {
       return MaterialPageRoute<void>(
         settings: settings,
-        builder: (BuildContext context) => HomePage(),
+        builder: (BuildContext context) => LoginPage(),
         fullscreenDialog: true,
       );
     }else {
       return MaterialPageRoute<void>(
         settings: settings,
-        builder: (BuildContext context) => HomePage(),
+        builder: (BuildContext context) => LoginPage(),
         fullscreenDialog: true,
       );
     }

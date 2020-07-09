@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong/latlong.dart';
-import 'package:cartrack/routes/home/widgets/markers.dart';
+import 'package:cartrack/routes/login/home/widgets/markers.dart';
 
 
 class Car extends StatefulWidget {
@@ -134,7 +134,7 @@ var CARS = [
   ),
   Car(
     asset: 'assets/car-7.jpg',
-    name: 'My love\'s car',
+    name: 'Mom\'s car',
     id: 'SW 2036 VC',
     latitude: 4.155,
     longitude: 9.233,
