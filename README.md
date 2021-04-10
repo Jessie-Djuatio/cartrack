@@ -1,6 +1,6 @@
 # cartrack
 
-A new Flutter project.
+A car tracking mobile application.
 
 ## Getting Started
 
